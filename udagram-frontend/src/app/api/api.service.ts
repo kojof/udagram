@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpRequest, HttpEvent } from '@angular/common/http';
-import { environment } from '../../environments/environment';
+//import { environment } from '../../environments/environment';
+import { userenvironment, feedenvironment } from '../../environments/environment';
 import { map } from 'rxjs/operators';
 
-const API_HOST = environment.apiHost;
+//const API_HOST = environment.apiHost;
+const USER_API_HOST = userenvironment.apiHost;
+const FEED_API_HOST = feedenvironment.apiHost;
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +36,8 @@ export class ApiService {
   }
 
   get(endpoint): Promise<any> {
-    const url = `${API_HOST}${endpoint}`;
+   // const url = `${API_HOST}${endpoint}`;
+   const url = `${FEED_API_HOST}${endpoint}`;
     const req = this.http.get(url, this.httpOptions).pipe(map(ApiService.extractData));
 
     return req
@@ -45,7 +49,8 @@ export class ApiService {
   }
 
   post(endpoint, data): Promise<any> {
-    const url = `${API_HOST}${endpoint}`;
+    //const url = `${API_HOST}${endpoint}`;
+    const url = `${FEED_API_HOST}${endpoint}`;
     return this.http.post<HttpEvent<any>>(url, data, this.httpOptions)
             .toPromise()
             .catch((e) => {

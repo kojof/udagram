@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from '../../environments/environment';
+//import { environment } from '../../environments/environment';
+import { feedenvironment } from '../../environments/environment';
 
 @Component({
   selector: 'app-menubar',
@@ -7,7 +8,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./menubar.component.scss'],
 })
 export class MenubarComponent implements OnInit {
-  public appName = environment.appName;
+  public appName = feedenvironment.appName;
 
   constructor() { }
 

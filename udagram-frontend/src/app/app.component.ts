@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { environment } from '../environments/environment';
+//import { environment } from '../environments/environment';
+import { userenvironment, feedenvironment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ export class AppComponent {
     }
   ];
 
-  public appName = environment.appName;
+  public appName = feedenvironment.appName;
 
   constructor(
     private platform: Platform,
@@ -32,7 +33,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      document.title = environment.appName;
+      document.title = feedenvironment.appName;
     });
   }
 }
