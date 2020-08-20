@@ -24,16 +24,14 @@
 export const feedenvironment = {
   production: false,
   appName: 'Udagram feed',
-  apiHost: 'http://a1681542fc9ad4663bac6eab853c0133-738272584.eu-west-2.elb.amazonaws.com:8080/api/v0'
+  apiHost: 'http://a363491abaf044ca28a9b321cb1549e1-655537544.eu-west-2.elb.amazonaws.com:8080/api/v0'
 };
 
 export const userenvironment = {
   production: false,
   appName: 'Udagram user',
-  apiHost: 'http://a1681542fc9ad4663bac6eab853c0133-738272584.eu-west-2.elb.amazonaws.com/api/v0'
+  apiHost: 'http://a363491abaf044ca28a9b321cb1549e1-655537544.eu-west-2.elb.amazonaws.com/api/v0'
 };
-
-
 
 /*
  * For easier debugging in development mode, you can import the following file

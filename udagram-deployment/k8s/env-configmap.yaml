@@ -7,6 +7,6 @@ data:
   JWT_SECRET: hello
   POSTGRES_DB: udagramkojo
   POSTGRES_HOST: udagramkojo.cr793kleprqw.eu-west-2.rds.amazonaws.com
-  URL: http://ad174d337ab304ab9857f51b24e6cb46-1723398062.eu-west-2.elb.amazonaws.com:8100
+  URL: http://ad07067ff85cc4ffe93a3dc4f58edadc-108940045.eu-west-2.elb.amazonaws.com:8100
 metadata:
   name: env-config
