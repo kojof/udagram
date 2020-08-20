@@ -3,16 +3,16 @@ services:
   reverseproxy:
     build:
       context: .
-    image: reverseproxy 
+    image: kojof/reverseproxy 
   backend_user:
     build:
       context: ../../udagram-user-api
-    image: udagram-user-api
+    image: kojof/udagram-user-api
   backend_feed:
     build:
       context: ../../udagram-feed-api  
-    image: udagram-feed-api 
+    image: kojof/udagram-feed-api 
   frontend:
     build:
       context: ../../udagram-frontend 
-    image: udagram-frontend:local
+    image: kojof/udagram-frontend:local

@@ -8,4 +8,4 @@ export AWS_BUCKET=udagram-kojof-dev
 export AWS_REGION=eu-west-2
 export AWS_PROFILE=default
 export JWT_SECRET=hello
-export URL=http://localhost:8100
+export URL=http://18.132.126.50:8100

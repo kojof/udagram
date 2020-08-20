@@ -1,7 +1,7 @@
 version: "3"
 services:
  reverseproxy:
-   image: reverseproxy
+   image: kojof/reverseproxy
    ports:
      - 8080:8080
    restart: always
@@ -9,7 +9,7 @@ services:
     - backend-user
     - backend-feed   
  backend-user:
-  image: udagram-user-api
+  image: kojof/udagram-user-api
   volumes:
    #- C:\Users\kojof\.aws
    - $HOME/.aws:/root/.aws
@@ -22,9 +22,9 @@ services:
    AWS_PROFILE: $AWS_PROFILE 
    AWS_BUCKET: $AWS_BUCKET
    JWT_SECRET: $JWT_SECRET
-   URL: "http://localhost:8100"
+   URL: "http://18.132.126.50:8100"
  backend-feed:
-  image: udagram-feed-api
+  image: kojof/udagram-feed-api
   volumes:
    #- C:\Users\kojof\.aws
    - $HOME/.aws:/root/.aws
@@ -37,8 +37,8 @@ services:
    AWS_PROFILE: $AWS_PROFILE 
    AWS_BUCKET: $AWS_BUCKET
    JWT_SECRET: $JWT_SECRET
-   URL: "http://localhost:8100"
+   URL: "http://18.132.126.50:8100"
  frontend:
-  image: udagram-frontend
+  image: kojof/udagram-frontend
   ports:
    - "8100:80"

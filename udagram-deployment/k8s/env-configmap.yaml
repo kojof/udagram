@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udagram-kojof-dev
+  AWS_PROFILE: _default
+  AWS_REGION: eu-west-2
+  JWT_SECRET: hello
+  POSTGRES_DB: udagramkojo
+  POSTGRES_HOST: udagramkojo.cr793kleprqw.eu-west-2.rds.amazonaws.com
+  URL: http://ad174d337ab304ab9857f51b24e6cb46-1723398062.eu-west-2.elb.amazonaws.com:8100
+metadata:
+  name: env-config
