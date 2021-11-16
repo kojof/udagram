@@ -20,7 +20,7 @@
     "@angular-devkit/core": "^9.1.10",
     "@types/bcrypt": "^3.0.0",
     "@types/jsonwebtoken": "^8.5.0",
-    "aws-sdk": "^2.709.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.8",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
